@@ -5,8 +5,10 @@ const server = prerender({
   chromeLocation: '/usr/bin/chromium-browser'
 });
 
-server.use(require('prerender-request-blacklist'));
+//server.use(require('prerender-request-blacklist'));
+server.use(prerender.sendPrerenderHeader());
 server.use(prerender.blockResources());
+server.use(prerender.removeScriptTags());
 server.use(prerender.blacklist());
 server.use(prerender.httpHeaders());
 
