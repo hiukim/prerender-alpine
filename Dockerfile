@@ -1,6 +1,8 @@
 FROM node:10.15-alpine
 ENV CHROME_BIN=/usr/bin/chromium-browser
 ENV CHROME_PATH=/usr/lib/chromium/
+# stop file type suffix in list
+ENV BLACKLISTED_EXTS=ico,jpg,jpeg,png,ttf,eot,otf,woff,woff2,gif,svg,pdf,css,svg
 
 COPY ./package.json .
 COPY ./server.js .
