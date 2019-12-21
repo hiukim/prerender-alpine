@@ -1,5 +1,5 @@
 {
-  "name": "prerender-alpine",
+  "name": "prerender-alpine-block",
   "version": "5.7.0",
   "description": "seo prerender container built on alpine linux",
   "main": "server.js",
