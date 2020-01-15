@@ -4,8 +4,6 @@ const server = prerender({
   forwardHeaders: true,
   chromeLocation: '/usr/bin/chromium-browser',
   logRequests: true,
-  // default 500ms
-  waitAfterLastRequest: 200,
 });
 
 //server.use(require('prerender-request-blacklist'));
