@@ -15,8 +15,8 @@ Lightweight Prerender container built on Alpine Linux with Node and Headless Chr
 Pull and run the image:
 
 ```
-docker pull 23233/prerender-alpine-block:latest
-docker run -p 3000:3000 23233/prerender-alpine-block:latest
+docker pull hiukim/prerender-alpine:latest
+docker run -p 3000:3000 hiukim/prerender-alpine:latest
 ```
 Prerender will now be running on http://localhost:3000. Try the container out with curl:
 
