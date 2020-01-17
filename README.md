@@ -16,7 +16,7 @@ Pull and run the image:
 
 ```
 docker pull hiukim/prerender-alpine:latest
-docker run -p 3000:3000 hiukim/prerender-alpine:latest
+docker run -p 3000:3000 --restart=always hiukim/prerender-alpine:latest
 ```
 Prerender will now be running on http://localhost:3000. Try the container out with curl:
 
